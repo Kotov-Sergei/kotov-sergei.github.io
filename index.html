@@ -3,28 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual Entrepreneur Kotov Sergei</title>
+    <title>Kotov Sergei - Individual Entrepreneur</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background-color: #f4f4f4; }
-        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; font-size: 24px; }
-        p { color: #555; }
-        .footer { margin-top: 30px; font-size: 12px; color: #999; text-align: center; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .info-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .info-item:last-of-type {
+            border-bottom: none;
+        }
+        .label {
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        .value {
+            color: #2d3748;
+            font-size: 16px;
+        }
+        .description {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+        .footer-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .footer-links a:hover {
+            color: #764ba2;
+            background: #f7fafc;
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Individual Entrepreneur Kotov Sergei</h1>
-        <p><strong>Business Registration:</strong> Armenia</p>
-        <p><strong>Location:</strong> Yerevan, Armenia</p>
-        <p><strong>Contact Email:</strong> armqs27@gmail.com</p> <!-- Ваш email из формы -->
         
-        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+        <div class="info-item">
+            <div class="label">Business Registration</div>
+            <div class="value">Armenia</div>
+        </div>
         
-        <p>This website serves as the official business presence for the developer account associated with AppGallery.</p>
+        <div class="info-item">
+            <div class="label">Location</div>
+            <div class="value">Yerevan, Armenia</div>
+        </div>
+        
+        <div class="info-item">
+            <div class="label">Contact Email</div>
+            <div class="value">
+                <a href="mailto:armqs27@gmail.com" style="color: #667eea; text-decoration: none;">armqs27@gmail.com</a>
+            </div>
+        </div>
+        
+        <div class="description">
+            This website serves as the official business presence for the developer account associated with AppGallery.
+        </div>
         
         <div class="footer">
-            &copy; 2026 Kotov Sergei. All rights reserved.
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy (RU)</a>
+                <a href="privacy-en.html">Privacy Policy (EN)</a>
+            </div>
+            <div class="copyright">
+                © 2026 Kotov Sergei. All rights reserved.
+            </div>
         </div>
     </div>
 </body>
